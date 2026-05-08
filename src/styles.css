@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+gridster {
+  background: #f0f2f8 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+gridster-item {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+/* Ensure all chart host elements fill the gridster cell */
+gridster-item > * {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

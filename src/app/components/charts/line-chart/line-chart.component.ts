@@ -8,7 +8,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import type { EChartsOption } from 'echarts';
-import { BaseComponentComponent } from '../base-component/base-component.component';
+import { BaseChartsComponentComponent } from '../base-charts-component/base-charts-component.component';
 import { monthlySalesData } from '../../../../data/sample-data';
 
 @Component({
@@ -19,7 +19,7 @@ import { monthlySalesData } from '../../../../data/sample-data';
   styleUrl: './line-chart.component.css',
 })
 export class LineChartComponent
-  extends BaseComponentComponent
+  extends BaseChartsComponentComponent
   implements OnInit, AfterViewInit, OnChanges, OnDestroy
 {
   /** Override default height for this chart */

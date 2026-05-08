@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import type { EChartsOption } from 'echarts';
-import { BaseComponentComponent } from '../base-component/base-component.component';
+import { BaseChartsComponentComponent } from '../base-charts-component/base-charts-component.component';
 import { monthlySalesData } from '../../../../data/sample-data';
 
 @Component({
   selector: 'app-bar-chart',
   standalone: true,
   imports: [],
-  templateUrl: '../base-component/base-component.component.html',
+  templateUrl: '../base-charts-component/base-charts-component.component.html',
   styleUrl: './bar-chart.component.css',
 })
-export class BarChartComponent extends BaseComponentComponent {
+export class BarChartComponent extends BaseChartsComponentComponent {
   override height = '100%';
   override theme: string = 'default';
 

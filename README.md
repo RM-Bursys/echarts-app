@@ -23,7 +23,7 @@ The app provides:
 ## Project structure
 
 - `src/app/app.component.ts` - dashboard state, Gridster configuration, edit mode, sizing, placement rules
-- `src/app/components/charts/base-component/base-component.component.ts` - reusable base wrapper for ECharts
+- `src/app/components/charts/base-charts-component/base-charts-component.component.ts` - reusable base wrapper for ECharts
 - `src/app/components/charts/line-chart/line-chart.component.ts` - line chart implementation
 - `src/app/components/charts/bar-chart/bar-chart.component.ts` - bar chart implementation
 - `src/app/components/charts/pie-chart/pie-chart.component.ts` - pie chart implementation
@@ -188,7 +188,7 @@ The base component handles:
 
 ### Common inputs in the base component
 
-Available in `BaseComponentComponent`:
+Available in `BaseChartsComponentComponent`:
 
 - `options` - full ECharts option object
 - `mergeOptions` - partial option updates
@@ -384,7 +384,7 @@ You can extend this dashboard in several ways.
 
 ### Add a new chart widget
 
-1. Create a new chart component extending `BaseComponentComponent`
+1. Create a new chart component extending `BaseChartsComponentComponent`
 2. Override `buildChartOptions()`
 3. Register the component in `app.component.ts`
 4. Add a new entry to `chartOptions`

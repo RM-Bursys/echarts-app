@@ -17,14 +17,14 @@ import type { ECharts, EChartsOption, SetOptionOpts } from 'echarts';
 export type ChartTheme = 'default' | 'dark' | string;
 
 @Component({
-  selector: 'app-base-component',
+  selector: 'app-base-charts-component',
   standalone: true,
   imports: [],
-  templateUrl: './base-component.component.html',
-  styleUrl: './base-component.component.css',
+  templateUrl: './base-charts-component.component.html',
+  styleUrl: './base-charts-component.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BaseComponentComponent implements AfterViewInit, OnChanges, OnDestroy {
+export class BaseChartsComponentComponent implements AfterViewInit, OnChanges, OnDestroy {
 
   // ── Common Inputs ──────────────────────────────────────────────
 

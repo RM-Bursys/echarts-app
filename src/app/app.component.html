@@ -13,7 +13,7 @@
       </button>
 
       @if (sidebarOpen) {
-        <h2 class="sidebar-title">Charts</h2>
+        <h2 class="sidebar-title">Widgets</h2>
       }
 
       <ul class="chart-list">
@@ -68,6 +68,7 @@
                 @case ('pie')  { <app-pie-chart  style="height:100%;width:100%" /> }
                 @case ('bar')  { <app-bar-chart  style="height:100%;width:100%" /> }
                 @case ('area') { <app-area-chart style="height:100%;width:100%" /> }
+                @case ('table') { <app-ag-grid style="height:100%;width:100%" /> }
               }
               @if (editMode) {
                 <button class="remove-btn" (click)="removeChart(i)" title="Remove">✕</button>

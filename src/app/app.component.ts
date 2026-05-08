@@ -10,6 +10,7 @@ import { LineChartComponent } from './components/charts/line-chart/line-chart.co
 import { PieChartComponent } from './components/charts/pie-chart/pie-chart.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
 import { AreaChartComponent } from './components/charts/area-chart/area-chart.component';
+import { AgGridComponent } from './components/charts/ag-grid/ag-grid.component';
 import { GridsterModule, GridsterConfig, GridsterItem } from 'angular-gridster2';
 
 export interface DashboardItem extends GridsterItem {
@@ -31,6 +32,7 @@ export interface ChartOption {
     PieChartComponent,
     BarChartComponent,
     AreaChartComponent,
+    AgGridComponent,
     GridsterModule
   ],
   templateUrl: './app.component.html',
@@ -57,6 +59,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     { type: 'pie',   label: 'Pie Chart',   icon: '🥧' },
     { type: 'bar',   label: 'Bar Chart',   icon: '📊' },
     { type: 'area',  label: 'Area Chart',  icon: '🏔️' },
+    { type: 'table', label: 'AG Grid',     icon: '🗂️' },
   ];
 
   gridOptions: GridsterConfig = {

@@ -1,0 +1,17 @@
+<div class="grid-card">
+  <div class="grid-card__header">
+    <div>
+      <h3 class="grid-card__title">Monthly Sales Grid</h3>
+      <p class="grid-card__subtitle">Shared mock data rendered with AG Grid</p>
+    </div>
+  </div>
+
+  <ag-grid-angular
+    class="grid-card__table"
+    [theme]="theme"
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowData]="rowData"
+  />
+</div>
